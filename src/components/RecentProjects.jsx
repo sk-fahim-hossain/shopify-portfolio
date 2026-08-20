@@ -42,7 +42,7 @@ const projectsData = [
     img: "/p4.png",
     iconLists: [<SiShopify />],
     link: "https://kajoudesign.com/",
-    password: "dahpiy",
+    password: "admin",
   },
 ];
 
@@ -69,11 +69,14 @@ const RecentProjects = ({ columns = 3, accentColor = "#50a2ff" }) => {
   const handleCopyAndGo = () => {
     navigator.clipboard.writeText(selectedProject.password);
     setCopied(true);
+    document.getElementById("make-color").style.color = accentColor;
+    document.getElementById("make-color").style.fontWeight = 800;
+    document.getElementById("make-color").style.fontSize = "1rem";
     setTimeout(() => {
       window.open(selectedProject.link, "_blank");
       setSelectedProject(null);
       setCopied(false);
-    }, 1000);
+    }, 1500);
   };
 
   return (
@@ -153,6 +156,7 @@ const RecentProjects = ({ columns = 3, accentColor = "#50a2ff" }) => {
                 type="button"
               />
             </div>
+            <p id="make-color" className="text-white text-sm mt-4 text-center">Click on the Password input  and  Cntrl + V (Past)</p>
           </div>
         </div>
       )}

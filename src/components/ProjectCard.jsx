@@ -55,12 +55,7 @@ const ProjectCard = ({ title, des, img, iconLists, link, accentColor = "#50a2ff"
       className="w-full"
     >
       {/* পুরো কার্ডটিকে <a> ট্যাগ দিয়ে র‍্যাপ করা হয়েছে */}
-      <a 
-        href={link} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="block cursor-pointer outline-none"
-      >
+      
         <div
           ref={cardRef}
           onMouseMove={handleMouseMove}
@@ -114,7 +109,7 @@ const ProjectCard = ({ title, des, img, iconLists, link, accentColor = "#50a2ff"
                 ))}
               </div>
 
-              {/* এটি এখন আর <a> ট্যাগ নয়, জাস্ট একটি div যা স্টাইল ধরে রাখে */}
+              
               <div 
                 style={{ color: accentColor }} 
                 className="flex items-center font-medium group-hover:brightness-125 transition-all border border-white/[.2] rounded-full px-3 py-1 lg:px-4 lg:py-2 text-xs lg:text-sm"
@@ -125,7 +120,7 @@ const ProjectCard = ({ title, des, img, iconLists, link, accentColor = "#50a2ff"
             </div>
           </div>
         </div>
-      </a>
+   
     </motion.div>
   );
 };

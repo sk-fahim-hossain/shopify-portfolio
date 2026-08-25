@@ -1,7 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow } from "./Shared/icons";
+import Image from "next/image";
 
 const ProjectCard = ({ title, des, img, iconLists, link, accentColor = "#50a2ff" }) => {
   const cardRef = useRef(null);
@@ -72,11 +73,13 @@ const ProjectCard = ({ title, des, img, iconLists, link, accentColor = "#50a2ff"
           <div className="spotlight absolute inset-0 pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
 
           {/* Image Container */}
-          <div className="relative flex items-center justify-center w-full overflow-hidden h-auto  min-h-[260px] g:h-[25vh] mb-6 rounded-2xl bg-[#13162d]">
-            <img
+          <div className="relative flex items-center justify-center w-full overflow-hidden h-auto min-h-[260px] g:h-[25vh] mb-6 rounded-2xl bg-[#13162d]">
+            <Image
               src={img}
               alt={title}
-              className="z-10 absolute bottom-0 w-full h-auto lg:h-full rounded-t-xl transition-transform duration-500 group-hover:scale-105 shadow-2xl"
+              fill
+              className="z-10 absolute bottom-0 w-full h-auto lg:h-full rounded-t-xl transition-transform duration-500 group-hover:scale-105 shadow-2xl object-cover object-top"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
 

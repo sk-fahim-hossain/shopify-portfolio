@@ -5,10 +5,10 @@ import {
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, 
   SiFirebase, SiMongodb, SiFramer, SiSwiper, SiGreensock, 
   SiExpress, SiJavascript, SiBootstrap, SiWebflow, SiGithub, 
-  SiWordpress, SiRedux, SiShopify, SiMui, SiAxios 
-} from "react-icons/si";
-import { TbSeo } from "react-icons/tb";
-import { DiPhotoshop } from "react-icons/di";
+  SiWordpress, SiRedux, SiShopify, SiMui, SiAxios,
+  TbSeo,
+  DiPhotoshop
+} from "./Shared/icons";
 
 
 const skills = [

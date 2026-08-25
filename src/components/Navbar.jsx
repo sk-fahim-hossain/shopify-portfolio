@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter,FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { FaGithub, FaLinkedin, FaTwitter,FaPhoneAlt, FaWhatsapp, HiMenuAlt3, HiX } from "./Shared/icons";
 
 
 const SOCIAL_LINKS = [

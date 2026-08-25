@@ -4,9 +4,9 @@ import {
   SiBootstrap, SiWebflow, SiGithub, SiWordpress, 
   SiRedux, SiReact, 
   SiGreensock,
-  SiShopify
-} from 'react-icons/si';
-import { TbSeo } from 'react-icons/tb';
+  SiShopify,
+  TbSeo
+} from './Shared/icons';
 
 const TechMarque = () => {
 

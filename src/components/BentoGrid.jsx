@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGlobe, FaLaptop, FaCode, FaRocket } from "react-icons/fa";
-import { IoCopyOutline } from "react-icons/io5";
+import { FaGlobe, FaLaptop, FaCode, FaRocket, IoCopyOutline } from "./Shared/icons";
+import Image from "next/image";
 
 // 1. EXTENDABLE DATA
 const gridItems = [
@@ -117,10 +117,12 @@ const BentoCard = ({ item, accentColor}) => {
       <div className={`${item.id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {item.img && (
-            <img
+            <Image
               src={item.img}
               alt={item.img}
+              fill
               className="object-cover object-center w-full h-full opacity-50 group-hover:scale-110 transition-transform duration-500"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           )}
         </div>

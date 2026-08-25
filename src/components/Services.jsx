@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // 1. EXTENDABLE DATA ARRAY
 const servicesData = [
@@ -88,9 +89,11 @@ const ServiceCard = ({ service, index }) => {
     >
       {/* Left: Illustration Area */}
       <div className="w-full sm:w-1/3 flex-shrink-0">
-        <img 
+        <Image 
           src={service.image} 
           alt={service.title} 
+          width={120}
+          height={120}
           className="w-full h-auto object-contain max-h-[120px] rounded-lg"
         />
       </div>

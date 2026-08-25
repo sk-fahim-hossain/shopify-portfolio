@@ -1,13 +1,13 @@
 "use client";
 import React from 'react';
-import { FaLocationArrow, FaDownload } from 'react-icons/fa';
+import { FaLocationArrow, FaDownload } from './icons';
 
 export default function AnimOutlinedButton({
   link = "#",
   buttonText = "Click Me",
-  type = "link", // 'link' | 'download' | 'button'
+  type = "link", 
   icon,
-  onClick, // বাইরে থেকে ফাংশন পাস করার জন্য
+  onClick, 
   downloadName = "Fahim Hossain Resume.pdf",
   otherClasses = "",
   isExternal = false

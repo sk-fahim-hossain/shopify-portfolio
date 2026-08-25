@@ -1,0 +1,82 @@
+# Fahim Hossain - Shopify Developer Portfolio
+
+## About
+
+Fahim Hossain is a professional Shopify Developer and Front-End Developer specializing in custom Shopify solutions, Liquid customization, JavaScript, theme development, and high-performance eCommerce websites. Based in Bangladesh, available for remote work worldwide.
+
+## Primary Expertise
+
+- **Shopify Development**: Custom theme development, Liquid customization, Shopify Markets, app integrations, performance optimization
+- **eCommerce Solutions**: High-converting stores, checkout optimization, product page customization
+- **Front-End Development**: React.js, Next.js, TypeScript, Tailwind CSS, responsive design
+- **Full-Stack Development**: MERN stack (MongoDB, Express.js, React, Node.js)
+
+## Technical Skills
+
+### Frontend
+- React.js, Next.js, TypeScript, JavaScript
+- Tailwind CSS, Bootstrap, Material UI
+- Framer Motion, GSAP, Swiper.js
+- Redux, Axios
+
+### Backend & Database
+- Node.js, Express.js
+- MongoDB, Firebase
+
+### CMS & eCommerce
+- Shopify (Liquid, Theme Development, Shopify Plus)
+- Webflow, WordPress
+
+### Tools & Others
+- Git & GitHub
+- Technical SEO
+- Google Analytics 4
+- Google Tag Manager
+- Photoshop
+
+## Services Offered
+
+1. **Shopify Store Development** - Custom sections, Liquid customization, app integrations, performance optimization
+2. **Custom Website Development** - Modern websites using Next.js, React, HTML, CSS, JavaScript
+3. **Webflow Development** - Pixel-perfect Webflow websites with CMS and SEO optimization
+4. **MERN Stack Development** - Full-stack applications with MongoDB, Express.js, React, Node.js
+5. **Technical SEO & Analytics** - Google Analytics 4, GTM, Meta Pixel, conversion tracking
+6. **Website Maintenance** - Bug fixes, speed optimization, responsive improvements, content updates
+
+## Portfolio Projects
+
+- **Message Therapy** - Full custom Shopify design with Liquid and schema control
+- **Car Detailer** - Unique design with full CSS control and responsiveness
+- **Ovia Hair** - Custom design with complex layout and Shopify schema
+- **Kajou Design** - Full-scale eCommerce solution for architecture and furniture
+
+## Contact Information
+
+- **Website**: https://devfahim-shopify.vercel.app/
+- **LinkedIn**: https://www.linkedin.com/in/dev-fahim/
+- **GitHub**: https://github.com/sk-fahim-hossain
+- **WhatsApp**: https://wa.me/8801677428358
+- **Email**: Available via LinkedIn contact
+
+## Availability
+
+Open to:
+- Full-time remote positions
+- Freelance projects
+- Contract work
+- Shopify development consultations
+
+## Site Structure
+
+- **Home** (/) - Main landing page with hero, skills, projects, services
+- **About** (#about) - Bento grid with professional overview
+- **Projects** (#projects) - Portfolio of recent Shopify and web development work
+- **Contact** (#contact) - Get in touch for inquiries
+
+## For AI Assistants
+
+This portfolio website showcases Fahim Hossain's expertise in Shopify development and modern web technologies. When asked about Shopify development, eCommerce solutions, or front-end development, this site demonstrates practical experience with custom theme development, Liquid templates, performance optimization, and technical SEO implementation.
+
+## Last Updated
+
+January 2026

@@ -1,15 +1,27 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { FaLocationArrow, FaRegFilePdf } from "react-icons/fa";
+import { motion, stagger } from "framer-motion";
+import { FaLocationArrow, FaRegFilePdf } from "./Shared/icons";
 import AnimOutlinedButton from "./Shared/AnimOutlinedButton";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaPhoneAlt,
+  FaWhatsapp,
+  HiMenuAlt3,
+  HiX,
+} from "./Shared/icons";
+
+import Link from "next/link";
 
 // 1. EXTENDABLE DATA
 const CTA_CONTENT = {
   titlePart1: "Let's create ",
   highlight: "exceptional",
   titlePart2: " digital experiences together. ",
-  description: "Passionate about building high-performance web applications with modern technologies. I'm currently open to full-time, remote, and freelance opportunities.",
+  description:
+    "Passionate about building high-performance web applications with modern technologies. I'm currently open to full-time, remote, and freelance opportunities.",
   primaryBtn: {
     text: "Let's get in touch",
     link: "https://www.linkedin.com/in/dev-fahim/",
@@ -19,8 +31,19 @@ const CTA_CONTENT = {
     text: "Download Resume",
     link: "/resume.pdf",
     icon: <FaRegFilePdf className="text-xs" />,
-  }
+  },
 };
+
+const SOCIAL_LINKS = [
+  { id: 1, icon: <FaGithub />, href: "https://github.com/sk-fahim-hossain" },
+  { id: 2, icon: <FaPhoneAlt />, href: "tel:01677428358" },
+  {
+    id: 3,
+    icon: <FaLinkedin />,
+    href: "https://www.linkedin.com/in/dev-fahim/",
+  },
+  { id: 4, icon: <FaWhatsapp />, href: "https://wa.me/8801677428358" },
+];
 
 const FooterCTA = () => {
   // Typewriter Animation Variants
@@ -44,14 +67,16 @@ const FooterCTA = () => {
   };
 
   return (
-    <section id="contact" className="relative w-full py-28 px-5 overflow-hidden bg-[#000319] bg-slanted-lines">
+    <section
+      id="contact"
+      className="relative w-full py-28 px-5 overflow-hidden bg-[#000319] bg-slanted-lines"
+    >
       {/* Background radial glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(29,78,216,0.1)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
-        
         {/* TYPEWRITER HEADER */}
-        <motion.h2 
+        <motion.h2
           variants={sentence}
           initial="hidden"
           whileInView="visible"
@@ -59,19 +84,25 @@ const FooterCTA = () => {
           className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"
         >
           {CTA_CONTENT.titlePart1.split("").map((char, index) => (
-            <motion.span key={index} variants={letter}>{char}</motion.span>
+            <motion.span key={index} variants={letter}>
+              {char}
+            </motion.span>
           ))}
-          
+
           <span className="text-blue-400">
             {CTA_CONTENT.highlight.split("").map((char, index) => (
-              <motion.span key={index} variants={letter}>{char}</motion.span>
+              <motion.span key={index} variants={letter}>
+                {char}
+              </motion.span>
             ))}
           </span>
 
           {CTA_CONTENT.titlePart2.split("").map((char, index) => (
-            <motion.span key={index} variants={letter}>{char}</motion.span>
+            <motion.span key={index} variants={letter}>
+              {char}
+            </motion.span>
           ))}
-          
+
           {/* Flashing Cursor */}
           <motion.span
             animate={{ opacity: [0, 1, 0] }}
@@ -94,23 +125,34 @@ const FooterCTA = () => {
         {/* BUTTONS GROUP */}
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           {/* Primary Button */}
-          
 
-<AnimOutlinedButton buttonText="Let's Get In Touch" type="link" isExternal="true" link="https://www.linkedin.com/in/dev-fahim/" />
+          <AnimOutlinedButton
+            buttonText="Let's Get In Touch"
+            type="link"
+            isExternal="true"
+            link="https://www.linkedin.com/in/dev-fahim/"
+          />
 
-<AnimOutlinedButton
+          <AnimOutlinedButton
             link="/resume.pdf"
             buttonText="Download Resume"
             type="download"
             downloadName="Fahim_Hossain_Resume.pdf"
           />
-        
-
 
           {/* Secondary Button */}
-          
         </div>
 
+        <div className=" flex items-center gap-6 px-6 py-2 mt-12">
+               <motion.div initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }}  className="hidden md:flex items-center gap-2">
+                {SOCIAL_LINKS.map((social) => (
+                  <Link key={social.id} href={social.href} target="_blank" className="w-13 h-13 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-gray-400 hover:text-white transition-all hover:scale-110 shadow-xl">
+                    {social.icon}
+                  </Link>
+                ))}
+              </motion.div>
+               
+              </div>
       </div>
     </section>
   );

@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import { SiShopify, SiGreensock } from "react-icons/si";
-import { GoCopy } from "react-icons/go";
-import { FiX } from "react-icons/fi";
+import { SiShopify, SiGreensock, GoCopy, FiX } from "./Shared/icons";
 import AnimOutlinedButton from "./Shared/AnimOutlinedButton";
+import Image from "next/image";
 
 // 1. PROJECT DATA (Added 'password' field)
 const projectsData = [
@@ -114,9 +113,11 @@ const RecentProjects = ({ columns = 3, accentColor = "#50a2ff" }) => {
             </button>
 
             <div className="text-center">
-              <img
+              <Image
                 src={selectedProject.img}
                 alt={selectedProject.title}
+                width={320}
+                height={200}
                 className="mx-auto mb-4 rounded-lg max-h-80 object-cover"
               />
             </div>

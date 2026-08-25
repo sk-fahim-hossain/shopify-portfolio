@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://devfahim-shopify.vercel.app";
 
-export default function robots(): MetadataRoute.Robots {
+export default function robots(){
   return {
     rules: [
       {

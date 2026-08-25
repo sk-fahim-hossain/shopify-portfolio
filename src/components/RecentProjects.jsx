@@ -15,7 +15,7 @@ const projectsData = [
     img: "/p1.png",
     iconLists: [<SiShopify />, <SiGreensock />],
     link: "https://www.therarecovery.store/",
-    password: "shewff", // আলাদা পাসওয়ার্ড ফিল্ড
+    password: "shewff", 
   },
   {
     id: 2,
